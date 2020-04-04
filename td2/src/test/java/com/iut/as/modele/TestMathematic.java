@@ -98,4 +98,25 @@ public class TestMathematic {
 		assertEquals(-4d, maths.division(-16d, null));
 		assertEquals(-4d, maths.division(null, null));
 	}
+	
+	@Test(expected = MathematicException.class)
+	public void testAdditionWithNull() {
+		assertEquals(-4d, maths.addition(null, -1d));
+		assertEquals(-4d, maths.addition(-16d, null));
+		assertEquals(-4d, maths.addition(null, null));
+	}
+	
+	@Test(expected = MathematicException.class)
+	public void testSoustractionWithNull() {
+		assertEquals(-4d, maths.soustraction(null, -1d));
+		assertEquals(-4d, maths.soustraction(-16d, null));
+		assertEquals(-4d, maths.soustraction(null, null));
+	}
+	
+	@Test(expected = MathematicException.class)
+	public void testMultiplicationWithNull() {
+		assertEquals(-4d, maths.multiplication(null, -1d));
+		assertEquals(-4d, maths.multiplication(-16d, null));
+		assertEquals(-4d, maths.multiplication(null, null));
+	}
 }
