@@ -10,4 +10,6 @@ public interface IMaths {
 	double multiplication(Integer a, Integer b);
 
 	double soustraction(Integer a, Integer b);
+
+
 }

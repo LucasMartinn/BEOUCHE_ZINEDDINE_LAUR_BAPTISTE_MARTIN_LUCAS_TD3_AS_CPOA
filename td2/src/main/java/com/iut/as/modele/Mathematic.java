@@ -10,11 +10,10 @@ import com.iut.as.interfaces.IMaths;
  *
  */
 public class Mathematic implements IMaths {
-
+	@Override
 	public double addition(double a, Integer b) {
 		
 		return a + b;
-		
 	}
 
 	@Override
@@ -57,7 +56,9 @@ public class Mathematic implements IMaths {
 	
 	@Override
 	public double soustraction(Integer a, Integer b) {
+		
 		return a - b;
+		
 	}
 	
 
