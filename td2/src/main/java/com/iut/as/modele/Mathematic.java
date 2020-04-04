@@ -11,13 +11,17 @@ import com.iut.as.interfaces.IMaths;
  */
 public class Mathematic implements IMaths {
 	@Override
-	public double addition(double a, Integer b) {
-		
+	public double addition(Double a, Double b) {
+		if (a == null || b == null) {
+			System.out.println("Un des opérateurs est nul !");
+			throw new MathematicException("Un des Operateurs est null");
+		}
 		return a + b;
+		
 	}
 
 	@Override
-	public double division(Integer a, Integer b) {
+	public double division(Double a, Double b) {
 		if (a == null || b == null) {
 			System.out.println("Un des opérateurs est nul !");
 			throw new MathematicException("Un des Operateurs est null");
@@ -33,7 +37,11 @@ public class Mathematic implements IMaths {
 	}
 
 	@Override
-	public double multiplication(Integer a, Integer b) {
+	public double multiplication(Double a, Double b) {
+		if (a == null || b == null) {
+			System.out.println("Un des opérateurs est nul !");
+			throw new MathematicException("Un des Operateurs est null");
+		}
 		// Utilisation standard :
 		// return a * b;
 
@@ -55,10 +63,12 @@ public class Mathematic implements IMaths {
 	}
 	
 	@Override
-	public double soustraction(Integer a, Integer b) {
-		
+	public double soustraction(Double a, Double b) {
+		if (a == null || b == null) {
+			System.out.println("Un des opérateurs est nul !");
+			throw new MathematicException("Un des Operateurs est null");
+		}
 		return a - b;
-		
 	}
 	
 

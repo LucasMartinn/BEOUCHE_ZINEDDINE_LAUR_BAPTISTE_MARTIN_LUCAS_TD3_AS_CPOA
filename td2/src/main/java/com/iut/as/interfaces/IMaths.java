@@ -2,14 +2,14 @@ package com.iut.as.interfaces;
 
 public interface IMaths {
 
-	double addition(double a, Integer b);
+	double addition(Double a, Double b);
 
 	// int (type primitif) --> Integer (class)
-	double division(Integer a, Integer b);
+	double division(Double a, Double b);
 
-	double multiplication(Integer a, Integer b);
+	double multiplication(Double a, Double b);
 
-	double soustraction(Integer a, Integer b);
+	double soustraction(Double a, Double b);
 
 
 }
