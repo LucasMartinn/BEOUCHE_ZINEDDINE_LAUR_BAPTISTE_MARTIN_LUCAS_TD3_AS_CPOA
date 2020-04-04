@@ -11,9 +11,9 @@ import com.iut.as.interfaces.IMaths;
  */
 public class Mathematic implements IMaths {
 
-	public double addition(double ret, Integer b) {
+	public double addition(double a, Integer b) {
 		
-		return ret + b;
+		return a + b;
 		
 	}
 
