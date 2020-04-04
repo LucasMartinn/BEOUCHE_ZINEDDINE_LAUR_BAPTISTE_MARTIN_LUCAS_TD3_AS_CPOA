@@ -11,9 +11,10 @@ import com.iut.as.interfaces.IMaths;
  */
 public class Mathematic implements IMaths {
 
-	@Override
-	public int addition(int a, int b) {
-		return a + b;
+	public double addition(double ret, Integer b) {
+		
+		return ret + b;
+		
 	}
 
 	@Override
@@ -33,12 +34,12 @@ public class Mathematic implements IMaths {
 	}
 
 	@Override
-	public int multiplication(int a, int b) {
+	public double multiplication(Integer a, Integer b) {
 		// Utilisation standard :
 		// return a * b;
 
 		// Utilisation de la méthode addition :
-		int ret = 0;
+		double ret = 0;
 		boolean signePositif = true;
 		if (a < 0) {
 			a = -a;
@@ -53,9 +54,11 @@ public class Mathematic implements IMaths {
 		}
 		return -ret;
 	}
-
+	
 	@Override
-	public int soustraction(int a, int b) {
+	public double soustraction(Integer a, Integer b) {
 		return a - b;
 	}
+	
+
 }
