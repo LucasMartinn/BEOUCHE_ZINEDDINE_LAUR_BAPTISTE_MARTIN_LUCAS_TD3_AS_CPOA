@@ -4,7 +4,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import com.iut.as.modele.metier.Client;
 
-public interface DAO<Client> {
+public interface IClientDAO<Client> {
 
     public abstract Client getById(String numClient);
 

@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import com.iut.as.modele.metier.Client;
 import com.iut.as.db.Connexion;
 
-public class ClientDAO implements DAO<Client> {
+public class ClientDAO implements IClientDAO<Client> {
 
 	private static ClientDAO instance;
 
@@ -29,13 +29,13 @@ public class ClientDAO implements DAO<Client> {
 		try {
 			Connection laConnexion = Connexion.getInstance().creeConnexion();
 			PreparedStatement requete = laConnexion.prepareStatement("select * from client where numeroClient=?");
-			requete.setString(1, numeroClient);
+			requete.setString(1, numClient);
 			ResultSet res = requete.executeQuery();
 
 			while (res.next()) {
-				String numeroClient = res.getNumeroClient(1);
+				String numeroClient = res.getString(1);
 				String adresse = res.getString(2);
-				String nom = res.getNom(3);
+				String nom = res.getString(3);
 				client = new Client(numeroClient, adresse, nom);
 			}
 
