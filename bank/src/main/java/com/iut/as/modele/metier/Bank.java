@@ -1,4 +1,4 @@
-package com.iut.as.modele;
+package com.iut.as.modele.metier;
 
 import java.util.Scanner;
 
@@ -22,7 +22,7 @@ public class Bank {
 		}
 	}
 
-	public static void ouverture_compte(String nomClient) {
+	public void ouverture_compte(String nomClient) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Saisissez un numéro de compte :");
 		String str = sc.nextLine();

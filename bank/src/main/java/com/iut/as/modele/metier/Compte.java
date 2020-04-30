@@ -1,4 +1,4 @@
-package com.iut.as.modele;
+package com.iut.as.modele.metier;
 
 public class Compte {
 	
